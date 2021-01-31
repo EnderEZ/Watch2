@@ -1,0 +1,86 @@
+/*============= category =============*/
+.category .row div:not(:first-child) .category-item:first-child {
+	margin-bottom: 30px;
+}
+
+.category-item::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #000;
+	opacity: 0.1;
+	z-index: 98;
+}
+
+.category-item>.btn {
+	position: absolute;
+	bottom: 1.5em;
+	left: 50%;
+	right: 50%;
+	margin: 0 -4.5em;
+	z-index: 99;
+}
+
+.category-item .img img {
+	object-fit: cover;
+}
+
+@media only screen and (min-width: 62em) {
+	.category-item .btn {
+		margin: 0 -6em;
+	}
+
+	.category-item .img {
+		overflow: hidden;
+	}
+
+	.category-item .img img {
+		transition: all 0.3s;
+	}
+
+	.category-item:hover .btn {
+		transform: scale(0.9);
+	}
+
+	.category-item:hover::before {
+		transition: all 0.2s;
+		opacity: 0;
+	}
+}
+
+/*============= best seller =============*/
+.seller .seller-content .group-btns .btn {
+	width: 80%;
+}
+
+.seller .seller-content .seller-icon {
+	display: block;
+	position: absolute;
+	top: 5%;
+	left: 7%;
+	z-index: 101;
+	height: 60px;
+	width: 60px;
+}
+
+.seller .seller-content .img-content::before {
+	content: '';
+	height: 70px;
+	display: block;
+	position: absolute;
+	left: -37%;
+	top: 5%;
+	font-size: 1.125em;
+	font-weight: bold;
+	padding: 0.35em 0.75em;
+	color: var(--color-white);
+	background-color: var(--color-red);
+	z-index: 100;
+	width: 100%;
+	text-align: center;
+	transform: rotate(-45deg);
+}

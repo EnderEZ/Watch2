@@ -1,0 +1,104 @@
+﻿@{
+   ViewData["Title"] = "WatchStore";
+}
+@section scripts{
+    <script src="~/js/cart.js"></script>   
+}
+<!--Banner small-->
+<div class="container-fluid">
+    <div class="banner-sm section">
+        <p class="white m-0">Корзина</p>
+    </div>
+</div>
+<!--Cart-->
+<div class="container">
+    <div class="cart contents">    
+        <!-- Cart - Shopping -->
+        <div class="section">
+            <!--Cart - Header List-->
+            <div class="d-flex align-items-center">
+                <h3 class="mb-3">Продукт</h3>
+                <p class="ml-auto">
+                    <span id="count-items">0</span> 
+                <p>
+            </div>
+            <!--Cart - List Item-->
+            <div id="cart-container">
+                </div><div></div><div></div><div></div></div>
+            </div>
+        </div>            
+        <!-- Bill Info-->
+        <div id="bill" class="section" style="padding-left: 100px; padding-right: 100px">
+            <h3 class="mb-4">Информация о товаре</h3>
+            <div class="row mb-4">
+                <div class="col-12 col-lg-6 order-lg-1 section">
+                    <table>
+                        <tbody  class="table text-4">
+                            <tr>
+                                <td>Всего заказов</td> 
+                                <td>
+                                    <span order-total>0</span>
+                                    <span>Грн.</span>
+                                </td> 
+                            </tr>
+                            <tr>
+                                <td>Скидки по счетам</td> 
+                                <td>
+                                    <span order-discount>0</span>
+                                    <span>%</span>
+                                </td> 
+                            </tr>
+                            <tr>
+                                <td>Транспорт</td> 
+                                <td>
+                                    <span order-shipping>30,000</span>
+                                    <span>Грн.</span>
+                                </td> 
+                            </tr>
+                            <tr class="bold">
+                                <td>Стоимость</td> 
+                                <td class="red">
+                                    <span order-pay>0</span>
+                                    <span>Грн.</span>
+                                </td> 
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-12 col-lg-6 order-lg-0">
+                    <form id="form">
+                        <div class="control-input validate">
+                            <label>ФИО получателя</label>
+                            <input id="full-name" class="mb-3" type="text" required>
+                            <span><span class="error">Не должно быть пустым</span></span>               
+                        </div>
+                        <div class="control-input validate">
+                            <label>Телефонный номер</label>
+                            <input id="phone" class="mb-3" type="tel"  pattern="^0\d+" minlength="9" maxlength="10"  required>
+                            <span><span class="error text-sub">Из 10 цифр и начинаеться с 0</span></span>               
+                        </div>
+                        <div class="control-input validate">
+                            <label>Email</label>
+                            <input class="mb-3" type="email" pattern="[\w+|\W+]*[@@]\w+[.]\w+" required >
+                            <span><span class="error text-sub">Пример gfg@mail.com '</span></span>               
+                        </div>
+                        
+                        <div class="control-input validate">
+                            <label>Номер дома, название улицы (или конкретный адрес)</label>
+                            <input class="mb-3" type="text" required>
+                            <span><span class="error text-sub">Не пустое</span></span>               
+                        </div>
+                        <div>
+                            <label>Запись</label>
+                            <textarea class="mb-3 d-block w-100" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="d-none" ></button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-lg bg-black white border-none"> Заказать </button>
+            </div>
+        </div>
+    </div> 
+</div>

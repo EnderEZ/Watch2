@@ -1,0 +1,57 @@
+<header class="container-fluid" style="background-color: oldlace;">
+    <div class="row align-items-center">
+        <!--Nav Mobile-->
+        <div class="col-3 d-lg-none">
+            <a id="menu" class="nav-item" href="#!" title="Hamberger Icon"><i class="icon las la-bars"></i></a>
+        </div>
+        <!--Title-->
+        <div class="col-6 col-lg-2 text-center text-lg-left">
+            <h1 class="py-3 text-3"><a  href="/" title="Trang chủ">Главная</a></h1>
+        </div>
+        <!--Nav Desktop-->
+        <div class="col-6 d-none col-lg-8 d-lg-block">
+            <nav class="nav-container">
+                
+                <a class="nav-item" href="/Men" title="Đồng hồ nam" >Мужские</a>
+                <a class="nav-item" href="/Women" title="Đồng hồ nữ" >Женские</a>
+                <a class="nav-item" href="/Couple" title="Đồng hồ đôi" >Общие</a>
+                <a class="nav-item" href="/Accessories" title="Phụ kiện" >Аксексуары</a>
+            </nav>
+        </div>
+        <!--Nav Icon-->
+        <div class="col-3 col-lg-2 d-lg-block">
+            <div class="d-flex justify-content-end">
+                <a class="nav-item nav-icon" href="/card" title="Cart Icon">
+                    <div class="cart-shopping">
+                        <i >Корзина</i> 
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--Side Menu mobile-->
+    <div class="nav-mobile d-lg-none">
+        <nav  class="nav-container flex-column bg-white">
+            <a class="nav-item-sm" href="/" title="Trang chủ">trang chủ</a>
+            <a id="search-sm"  class="nav-item-sm" href="#!" title="Tìm kiếm">tìm kiếm</a>
+            <a class="nav-item-sm" href="/Discount" title="Khuyến mãi">khuyến mãi</a>
+            <a class="nav-item-sm" href="/Men" title="Đồng hồ nam">nam</a>
+            <a class="nav-item-sm" href="/Women" title="Đồng hồ nữ">nữ</a>
+            <a class="nav-item-sm" href="/Couple" title="Đồng hồ đôi">cặp đôi</a>
+            <a class="nav-item-sm" href="/Accessories" title="Phụ kiện">phụ kiện</a>
+            <i class="btn-classic red big-icon icon las la-times"></i>
+
+        </nav>
+        <span class="overlay bg-black"></span>
+    </div>
+    <!--Search Bar-->
+    <form action="/FindProductByChart" method="post">
+        <div class="searchbar d-block bg-white">
+            <div class="search-input">
+                <input type="text" name="search" placeholder="Tìm kiếm sản phẩm ...">   
+                <i class="btn-classic red big-icon las la-times"></i>
+            </div>
+        </div>
+    </form>
+
+</header>
