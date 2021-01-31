@@ -360,3 +360,4 @@ C:\Users\Пользователь\Desktop\Watch2\Watch2\obj\Debug\netcoreapp3.1\
 C:\Users\Пользователь\Desktop\Watch2\Watch2\obj\Debug\netcoreapp3.1\aspcore-watchshop.dll
 C:\Users\Пользователь\Desktop\Watch2\Watch2\obj\Debug\netcoreapp3.1\aspcore-watchshop.pdb
 C:\Users\Пользователь\Desktop\Watch2\Watch2\obj\Debug\netcoreapp3.1\aspcore-watchshop.genruntimeconfig.cache
+C:\Users\Пользователь\Desktop\Watch2\Watch2\obj\Debug\netcoreapp3.1\aspcore-watchshop.GeneratedMSBuildEditorConfig.editorconfig

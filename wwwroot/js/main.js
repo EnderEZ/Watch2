@@ -34,6 +34,7 @@ function onSelectedItemDropdown(callBack) {
 }
 
 function addCart(elm, popup) {
+	console.log(elm);
 	let id = $(elm).parents(".product").data("itemid")
 	if (!id) id = $(elm).parents(".product-text").data("itemid")
 	if (typeof id == "undefined") window.location.href = "/error"
@@ -108,7 +109,7 @@ function renderProducts(items, target) {
 			container
 			.removeClass("row")
 			.append(
-				`<p class="text-center mt-5 text-4">Không có sản phẩm phù hợp</p>`
+				`<p class="text-center mt-5 text-4">Товары не найдены</p>`
 			)
 		else {
 			container.addClass("row")

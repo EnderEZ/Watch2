@@ -108,7 +108,7 @@ function renderProducts(items, target) {
 			container
 			.removeClass("row")
 			.append(
-				`<p class="text-center mt-5 text-4">Không có sản phẩm phù hợp</p>`
+				`<p class="text-center mt-5 text-4">Товары не найдены</p>`
 			)
 		else {
 			container.addClass("row")
